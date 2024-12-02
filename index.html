@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Artifacts</title>
+    <style>
+   /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    z-index: 1000;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    background: url('Hero_image.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#hero h1 {
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+/* Content Sections */
+section {
+    padding: 60px 20px;
+    margin: 50px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+#introduction, .artifact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#introduction img, .artifact img {
+    max-width: 300px;
+    margin: 20px;
+}
+#introduction .text, .artifact .text {
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Gallery */
+.artifact .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.artifact .gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items:center;
+        padding: 1rem;
+        
+    }
+    nav a {
+        margin: 5px 0;
+        margin-left: 25px;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    #introduction, .artifact {
+        flex-direction: column;
+    }
+    #introduction img, .artifact img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    #introduction .text, .artifact .text {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .artifact .gallery img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0.5rem;
+    }
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    .artifact .gallery img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#introduction">About Us</a>
+        <a href="#artifact1">Andrew Jackson</a>
+        <a href="#artifact2">Rutherford Hayes</a>
+        <a href="#artifact3">George Washington</a>
+    </nav>
+
+    <section id="hero">
+        <h1>Presidential Portraits</h1>
+    </section>
+
+    <section id="introduction">
+        <img src="intro-Camera.png" alt="Space image">
+        <div class="text">
+            <h2>About Us</h2>
+            <p>Step into the world of history and artistry with our Presidential Portraits collection. This digital gallery offers an immersive exploration of the iconic representations of U.S. presidents, featuring 3D scans, high-resolution images, and detailed information about each portrait. From the classical brushstrokes of early leaders to contemporary interpretations, the collection celebrates the intersection of art, politics, and culture.
+
+                Dive into the stories behind each portrait—how they were created, their historical significance, and their role in shaping the visual legacy of leadership in America. Whether you're an art enthusiast, history buff, or student, this collection provides a unique opportunity to engage with the figures who have defined the nation's history in a profoundly personal and creative way.
+                
+                Discover the artistry, symbolism, and evolving traditions of presidential portraiture, and gain a deeper appreciation for the narratives these artworks tell about the nation's past, present, and future.</p>
+        </div>
+    </section>
+
+    <section id="artifact1" class="artifact">
+      
+        <div class="text">
+            <h2>Andrew Jackson (1829-1837)</h2>
+            <p>Andrew Jackson, the 7th president of the United States, served from 1829 to 1837. Known as the "People's President," Jackson was a populist leader who championed the common man and sought to expand democratic participation. His presidency marked the rise of Jacksonian Democracy and was characterized by controversial policies, including the Indian Removal Act and his opposition to the National Bank. A war hero from the Battle of New Orleans during the War of 1812, Jackson's legacy is a blend of significant democratic reforms and contentious decisions that continue to spark debate.</p>
+            
+        </div>
+        <img src="AJ.jpg" alt="Artifact 1">
+        <img src="A1-Camera.png" alt="Artifact 1">
+        <div class="gallery">
+            <img src="A1 CV-Camera.png" alt="Detail 1">
+            <img src="A1 CV-Camera 2.png" alt="Detail 2">
+            <img src="A1 CV-Camera 3.png" alt="Detail 3">
+        </div>
+
+
+    </section>
+
+    <section id="artifact2" class="artifact">
+        <div class="text">
+            <h2>Rutherford B. Hayes (1877-1881)</h2>
+            <p>Rutherford B. Hayes, the 19th president of the United States, served from 1877 to 1881. His presidency is best known for ending the Reconstruction Era through the Compromise of 1877, which resolved the disputed 1876 election. Hayes advocated for civil service reform, equal treatment of all races, and efforts to reconcile a nation divided by the Civil War. Despite his single term in office, Hayes laid the groundwork for modernizing the federal government and fostering unity during a transformative period in American history.</p>
+             </div>
+        <img src="RH.jpg" alt="Artifact 2">
+        <img src="A2-Camera.png" alt="Artifact 2">
+        <div class="gallery">
+            <img src="A2 CV-Camera.png" alt="Detail 1">
+            <img src="A2 CV-Camera 2.png" alt="Detail 2">
+            <img src="A2 CV-Camera 3.png" alt="Detail 3">
+        </div>
+    </section>
+
+</section>
+
+<section id="artifact3" class="artifact">
+    <div class="text">
+        <h2>George Washington (1789-1797)</h2>
+        <p>George Washington, the 1st president of the United States, served from 1789 to 1797. Often called the "Father of His Country," Washington set the precedent for the presidency, shaping the office's role and powers. A revered leader during the American Revolution, he guided the nation through its formative years, emphasizing unity, neutrality in foreign affairs, and the importance of a strong federal government. His leadership and integrity continue to symbolize the principles upon which the United States was founded.</p>
+        </div>
+    <img src="GW.jpg" alt="Artifact 2">
+    <img src="A3-Camera.png" alt="Artifact 2">
+    <div class="gallery">
+        <img src="A3 CV-Camera.png" alt="Detail 1">
+        <img src="A3 CV-Camera 2.png" alt="Detail 2">
+        <img src="A3 CV-Camera 3.png" alt="Detail 3">
+    </div>
+
+
+</section>
+
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Presidential Portraits. A project in Advance Multimedia Technology. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
